@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Service </title>
+        <link rel="stylesheet" href="service.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+       
+    </head>
+<body>
+    <!-- navigation -->
+    <div class="nav">
+        <div class="logo">
+            <!-- logo -->
+            <span><img src="images/logo.png"  alt="logo"  class="logo-pic"></span>
+            <span class="company-name"><h2>Made4you</h2></span> 
+        </div>
+        <!-- quick links -->
+                <ul style="list-style:none ;"  class="list" id="navlist">
+                    <a href="index.html"><li class="list-item">HOME</li></a>
+                    <a href="contact.html"><li class="list-item">CONTACT US</li></a>
+                </ul>
+               <!-- three lines of menu -->
+                <div class="menu" id="toggle-button">
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                    <div class="menu-line"></div>
+                </div>
+               
+    </div>
+    <!-- script to toggle quick links -->
+    <script>
+        let togglebutton= document.getElementById('toggle-button');
+        let navlist=document.getElementById('navlist');
+        togglebutton.addEventListener("click",()=>{
+            navlist.classList.toggle('active');
+        })
+    </script>
+    <!-- heading/first line -->
+    <div class="paragraph">
+        <h1><b>Services we provide:</b></h1><br>
+        <p>We understand your requirements and you deserve our undivided attention.<br> Here at M4Y we provide the best services, only for you!  </p>
+    </div>
+    <!-- services information -->
+ <div class="service">
+
+    <div class="container" id="development">
+        <div class="development">
+           <h2>DEVELOPMENT</h2>
+           <img src="images/dev 2.jpeg" alt="photo" width="250" height="250">
+           <p>We develop responsive, functional and super-fast websites.
+               We keep User Experience in mind while creating websites. A website should load
+               quickly and should be accessible even on a small view-port and slow internet
+               connection.</p>
+               <button  Onclick="location.href='contact.html'">get a quote</button>
+        </div>
+   </div>
+
+        <div class="container">
+           <div class="consultancy">
+              <h2>CONSULTANCY</h2>
+              <img src="images/consul 1.jpeg" alt="photo" width="250" height="250" >
+              <p>We are here to provide you with expert advice on your design and
+               development requirements.</p>
+                  <button  Onclick="location.href='contact.html'">get a quote</button>
+          </div>
+        </div>
+
+        <div class="container">
+            <div class="Videos">
+              <h2>VIDEOS</h2>
+              <img src="images/vide 1.jpeg" alt="photo" width="250" height="250">
+              <p>We are here to provide you with expert advice on your design and
+               development requirements.</p>
+                  <button  Onclick="location.href='contact.html';">get a quote</button>
+          </div>
+        </div>
+ </div>
+ <!-- neep help box -->
+ <div class="need help">
+    <p> NEED HELP ?</p>
+    <button  Onclick="location.href='contact.html';">Contact US</button>
+</div>
+ <div class="chat with us">
+    <a href="https://wa.me/911231231234/?text=Hello%20How%20can%20help%20you."
+    class="float" target="_blank">
+  <i class="fa fa-whatsapp my-float"></i></a>
+ </div>
+ <!-- footer -->
+<footer>
+    <div class="footer-container">
+        <div class="left box">
+            <div class="content">
+            <img src="images/logo.png"  alt="logo"  class="logo-footer">
+            <p>Made4YOU PVT LTD</p>
+            </div>
+        </div>
+        <div class ="center box">
+            <h2>Address</h2>
+            <div class="content">
+                <div class="place">
+                    <span class="fa fa-map-marker"></span>
+                    <span class="text">Banglore karnataka</span>
+
+                </div>
+                <div class="phone">
+                    <span class="fa fa-phone"></span>
+                    <span class="text">+91 1234 5678</span>
+                    
+                </div>
+                <div class="email">
+                    <span class="fa fa-envelope"></span>
+                    <span class="text">M4Y@gmail.com</span>
+               </div>
+            </div>
+        </div>
+         <div class="right box">
+                <h2>Connect</h2>
+            <div class="content">
+                <div class="social">
+                    <!-- social media icons -->
+                    <a href="https://m.facebook.com"><span class="fa fa-facebook-f"></span></a>
+                            <a href="http://twitter.com"><span class="fa fa-twitter"></span></a>
+                            <a href="https://www.instagram.com"><span class="fa fa-instagram"></span></a>
+                            <a href="https://youtube.com"><span class="fa fa-youtube"></span></a>
+                </div>
+            </div>
+         </div>
+    </div>
+</footer>  
+</body>
+</html>
